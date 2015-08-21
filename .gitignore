@@ -26,3 +26,7 @@ sysinfo.txt
 # Visual Studio for Unity Plugin
 Assets/UnityVS.meta
 Assets/UnityVS
+
+# A* Pathfinding Project Unity Plugin
+Assets/AstarPathfindingProject.meta
+Assets/AstarPathfindingProject

@@ -19,4 +19,14 @@ public class Frame : MonoBehaviour
 	void Update () {
 	
 	}
+
+    public void GlobalFunction()
+    {
+        Debug.Log("Global Class Function");
+    }
+
+    public virtual void VirtualFunction()
+    {
+        Debug.Log("Global Version Function");
+    }
 }

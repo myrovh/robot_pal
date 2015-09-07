@@ -98,9 +98,9 @@ GameObject:
   - 33: {fileID: 219749638}
   - 65: {fileID: 219749637}
   - 23: {fileID: 219749636}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,8 +158,8 @@ Transform:
   m_LocalPosition: {x: -4.82999992, y: 3.6500001, z: -9.28999996}
   m_LocalScale: {x: 7.74053192, y: 7.74053383, z: 7.74053383}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 1454810891}
+  m_RootOrder: 5
 --- !u!1 &229173409
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   astarData:
-    dataString: UEsDBBQAAAgIAABYIexm+eRaPwIAAFsEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFdUttu2kAQ/ZVqnwFxd81bCgltlSYotOpDlYfxeoxXrHetvRRIxL9ndjEGIiSjnTkzc86ZeWcbL3I2e2f/QXpkMwZJkUMxnPDxBKfDcdbFUQ5pnieYZFk6GmTs2GFga+TuBZzQbDboMGF1hc4Ifqc2krr0O8wrUWhT3ecbnGvrLJsVIC12mNEu1KkwdB+hh/h9oy+15qgcmibZHfYm6SBNxsNphHX7vUGL9IpLqGrM1+INm4L0ay8ZT0ajiKbHKE2S6XRAaKVzPAGpA9dSCtuQcIc6CJ9DbT2R77BcAKkJJAhaotiUjs2GV1XPRWHRRdYGDgthyIzYjH3TrqQOFdjtlamB7anPr9tENzArjK6+N1MGferpSsG3L3DgYF1r23VwcU3Qqx3ILWQS/5aonvTSaK9opc54KvMWh4u2SatgXiLfnjEnajchX9+s52z6MUjbz6WoMnr2xpfn3V7YiKPAWurgaEq1aMj2H0Q1rtzGfhQLFP5Y/A2by1004QdhrKNEbAbe6Uehtksj8gvyHF0I6x5FJaJvtOEgI9PeEJLdRz9JsXdzbRSG4ElajQqkO6xomrvd5adMO+9T/AG40yfvm0xz9bfwGGyx/f5tYqV35/1Z/OmreqWFcmsEw8vLznHvvMEFOAjroHLact6mLWnlNFd5KemM4iiS+a/fod8raS9BKZQhxJ60Cqd9/fdK2xSKJIFcnZhFF2h36uyVojsjM4P9X5YG6nDbuYHdUrxVunVUqEKvuUFUz7E20jt+AFBLAwQUAAAIAAAAWCHsHn9ddjIAAAAyAAAAEgAkAGdyYXBoMF9lZGl0b3IuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAXsibG9ja2VkIjp0cnVlLCJzaG93RXh0cmEiOmZhbHNlLCJwaXZvdCI6IkNlbnRlciJ9UEsDBBQAAAgIAABYIezWxxLZdQAAAIMAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BHYyxDoIwEED/5WZshIINrA5sxJ0wXL0r3GBLSjEhxn+Xur3hvfeBN8dNgocOtDJKQwFzxHXZoCtP3IVOGgGNI3RV86wbvlW1vbAmbIkMG2tbXVqYCkjHygO++F88MC1OPImfVR+F+nzNlg/E97D7lLXr9P0BUEsBAi0AFAAACAgAAFgh7Gb55Fo/AgAAWwQAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAAAAFgh7B5/XXYyAAAAMgAAABIAJAAAAAAAAAAAAAAAjAIAAGdyYXBoMF9lZGl0b3IuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAABYIezWxxLZdQAAAIMAAAAJACQAAAAAAAAAAAAAABIDAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAMAAwAcAQAA0gMAAAAA
+    dataString: UEsDBBQAAAgIAABYIews4M95JwIAAEUEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFdUstu2zAQ/JWCZzmQBadxfUvtxG2RJkbcoocihxW1sghTpMBH/Qj8711SsmwFAiRodvYxs/vONl4UbPbO/oH0yGYsyzO8y6Es7rLJ7bT4PJrgNMtvp2UKk3GWpzk7JQxsg9y9ghOazcYJE1bX6Izg92ojqUqaMK9EqU39UGxwrq2zbFaCtJgwo13IU6HpPlIP8X2kN5XmqByaQXCU3oz7uFdcQt1gsRZH7GjjtCXSlxhKF9gGKYtrKYXt2rlDEyTOobGexkxYIYDmDu2IWqHYVI7Nsqusl7K06OIgBg4LYUh2LMa+aldRhRrs9sq+0L+t83MYGI0pUhpdf+u6xJldJfj2FQ4crOsNugYX1wN6tQO5hVzinwrVs14a7RUtzxlPad5ituiL9ArmFfLtmdOONoB8M/D6bPQpSNvPpahz+r2ZXH7v98JGHgFrqYOjXygXDdn+nUaNy7WxHmFhhN8Wf8HmcgEd/CiMdRSIxcA7/STUdmlEcWGe0YWw7knUIvpGGw4ycu0NMdlD9JMUezfXRmEAW2kNKpDusKJubrjLD5G+3wf8EbjTrfddpLvvIT2CPTdNh4GV3p33Z/GHr5uVFsqtEQyvLjvHvfMGF+AgrIPSactFH7aklVNf5aWkM4qtSObfNKHnjbRXoBTKALFnrcJpX3/eaJtCkSSQq3ay6ALtTp29UnRnZGaw/9PSQBNuuzCwW4pjrXtHhSr1mhtE9RJz43in/1BLAwQUAAAIAAAAWCHsHn9ddjIAAAAyAAAAEgAkAGdyYXBoMF9lZGl0b3IuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAXsibG9ja2VkIjp0cnVlLCJzaG93RXh0cmEiOmZhbHNlLCJwaXZvdCI6IkNlbnRlciJ9UEsDBBQAAAgIAABYIexfX9mxdQAAAIMAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BHYyxDoMgFAD/5c2WIGIhrh3cTPfGAfIeytCHQWzSNP33Srcb7u4DL8p7TAwDdMKIDhpYstvWHYb2xCPiSQ9QXpHxLqBRurd4vWiyyvc2SKdb5aWHuYHy3mhyT/oXd1fWEBkjL2LMEcd6rRYnpFs6uFRNzt8fUEsBAi0AFAAACAgAAFgh7Czgz3knAgAARQQAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAAAAFgh7B5/XXYyAAAAMgAAABIAJAAAAAAAAAAAAAAAdAIAAGdyYXBoMF9lZGl0b3IuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAABYIexfX9mxdQAAAIMAAAAJACQAAAAAAAAAAAAAAPoCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAMAAwAcAQAAugMAAAAA
     upgradeData: 
     data_backup: 
     file_cachedStartup: {fileID: 0}
@@ -386,11 +386,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 479164495}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.92244148, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 1
 --- !u!1 &680519570
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,9 +465,9 @@ GameObject:
   - 33: {fileID: 702378669}
   - 65: {fileID: 702378668}
   - 23: {fileID: 702378667}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -525,8 +525,8 @@ Transform:
   m_LocalPosition: {x: -7.01999998, y: 3.6500001, z: 9.07999992}
   m_LocalScale: {x: 7.74053192, y: 7.74053383, z: 7.74053383}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Father: {fileID: 1454810891}
+  m_RootOrder: 3
 --- !u!1 &732147797
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,8 +552,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 732147797}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: .267243087, y: 0, z: 0, w: .963629127}
+  m_LocalPosition: {x: 0, y: 9.89999962, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1454810891}
@@ -587,8 +587,8 @@ Camera:
   m_GameObject: {fileID: 732147797}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: .257352948, g: .257352948, b: .257352948, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -623,9 +623,9 @@ GameObject:
   - 33: {fileID: 1034018644}
   - 64: {fileID: 1034018643}
   - 23: {fileID: 1034018642}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -822,9 +822,9 @@ GameObject:
   - 33: {fileID: 1435426696}
   - 65: {fileID: 1435426695}
   - 23: {fileID: 1435426694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -882,8 +882,8 @@ Transform:
   m_LocalPosition: {x: 10.4399996, y: 3.6500001, z: -17.7099991}
   m_LocalScale: {x: 7.74053192, y: 7.74053383, z: 7.74053383}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1454810891}
+  m_RootOrder: 6
 --- !u!1 &1454810890
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,8 +912,12 @@ Transform:
   - {fileID: 1034018641}
   - {fileID: 732147798}
   - {fileID: 1214039921}
+  - {fileID: 702378670}
+  - {fileID: 1897481188}
+  - {fileID: 219749639}
+  - {fileID: 1435426697}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
 --- !u!1 &1806744948
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,7 +947,7 @@ Transform:
   m_Children:
   - {fileID: 680519571}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
 --- !u!114 &1806744950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1089,9 +1093,9 @@ GameObject:
   - 33: {fileID: 1897481187}
   - 65: {fileID: 1897481186}
   - 23: {fileID: 1897481185}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1149,8 +1153,8 @@ Transform:
   m_LocalPosition: {x: 1.65999997, y: 3.6500001, z: -18.2299995}
   m_LocalScale: {x: 7.74053192, y: 7.74053383, z: 7.74053383}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1454810891}
+  m_RootOrder: 4
 --- !u!1 &1962926490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,4 +1291,4 @@ Transform:
   m_Children:
   - {fileID: 1869757965}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3

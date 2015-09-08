@@ -9,31 +9,42 @@ public class Frame : MonoBehaviour
     public Vector3 facingPoint;
     public Vector3 itemPoint;
     public Vector3 locomotionPoint;
-    public Vector3 movePoint;
 
+    public Vector3 movePoint;
     private Seeker _seeker;
+    private const float RepathTimeoutInterval = 5.0f;
+    private float _repathTimeout;
 
 	public void Start ()
 	{
 	    _seeker = GetComponent<Seeker>();
-        _seeker.pathCallback += OnPathComplete;
+	    _repathTimeout = RepathTimeoutInterval;
 	}
 	
-	void Update () {
-	
+	void Update ()
+	{
+        //Force a repath every 5 seconds
+	    _repathTimeout -= Time.deltaTime;
+	    if (_repathTimeout < 0.0f)
+	    {
+	        UpdatePath();
+	        _repathTimeout = RepathTimeoutInterval;
+            Debug.Log(gameObject.name + " generated new path.");
+	    }
 	}
 
-    public void OnDisable()
+    public void UpdateMoveLocation(Vector3 location)
     {
-        _seeker.pathCallback -= OnPathComplete;
+        movePoint = location;
+        UpdatePath();
     }
 
-    public void RePath()
+    private void UpdatePath()
     {
-        _seeker.StartPath(transform.position, movePoint);
+        _seeker.StartPath(transform.position, movePoint, OnPathComplete);
     }
 
-    public void OnPathComplete(Path p)
+    private void OnPathComplete(Path p)
     {
         Debug.Log("Path found. Error: " + p.error);
     }

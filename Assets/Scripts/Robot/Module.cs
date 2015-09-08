@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Module : MonoBehaviour {
+public class Module : MonoBehaviour
+{
+
+    private Frame _parentReference;
 
 	// Use this for initialization
-	void Start () {
-	
+	void Start ()
+	{
+	    _parentReference = transform.parent.GetComponent<Frame>();
 	}
 	
 	// Update is called once per frame

@@ -4,7 +4,6 @@ using Pathfinding;
 
 public class Frame : MonoBehaviour
 {
-
     public Vector3 VisionPoint;
     public Vector3 FacingPoint;
     public Vector3 ItemPoint;
@@ -18,15 +17,15 @@ public class Frame : MonoBehaviour
     private const float RepathTimeoutInterval = 5.0f;
     private float _repathTimeout;
 
-	public void Start ()
-	{
-	    _seeker = GetComponent<Seeker>();
-	    _repathTimeout = RepathTimeoutInterval;
-	    _propulsionScript = AttachedPropulsion.GetComponent<Propulsion>();
-	}
-	
-	void Update ()
-	{
+    public void Start()
+    {
+        _seeker = GetComponent<Seeker>();
+        _repathTimeout = RepathTimeoutInterval;
+        _propulsionScript = AttachedPropulsion.GetComponent<Propulsion>();
+    }
+
+    private void Update()
+    {
         /*
         //Force a repath every 5 seconds
 	    _repathTimeout -= Time.deltaTime;
@@ -37,7 +36,7 @@ public class Frame : MonoBehaviour
             Debug.Log(gameObject.name + " generated new path.");
 	    }
         */
-	}
+    }
 
     public void UpdateMoveLocation(Vector3 location)
     {

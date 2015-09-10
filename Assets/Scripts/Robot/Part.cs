@@ -19,11 +19,11 @@ public class Part : MonoBehaviour
     //ref to frame script
     //ref to heat transfer collider
 
-	void Start () {
-	
-	}
-	
-	void Update () {
-	
-	}
+    private void Start()
+    {
+    }
+
+    private void Update()
+    {
+    }
 }

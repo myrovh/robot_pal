@@ -9,8 +9,11 @@ public class Propulsion : Module
     private Path _waypoints;
     private int _currentWaypoint;
     private int tempSpeed = 6; //TODO speed is calculated from attached servos
-    private float tempTurnRate = 3.0f;
-    private float tempTurnOnlyAngle = 20.0f;
+    private float tempTurnRate = 3.0f; //TODO speed is calculated from attached servos
+    /// <summary>
+    /// When the angle between the Robot's forward direction and the current waypoint is greater than this value then the Robot will only turn towards the current waypoint.
+    /// </summary>
+    private float TurnOnlyAngle = 20.0f;
 
     private void Update()
     {
@@ -34,7 +37,7 @@ public class Propulsion : Module
 
         //Move parent robot
         transform.parent.rotation = Quaternion.LookRotation(rotation);
-        if (angle < tempTurnOnlyAngle)
+        if (angle < TurnOnlyAngle)
         {
             transform.parent.position += forwardMovement;
         }

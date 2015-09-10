@@ -37,9 +37,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
---- !u!127 &3
-LevelGameManager:
-  m_ObjectHideFlags: 0
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -68,6 +65,7 @@ LightmapSettings:
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
+    m_ReflectionCompression: 2
   m_LightmapSnapshot: {fileID: 0}
   m_RuntimeCPUUsage: 25
 --- !u!196 &5
@@ -243,6 +241,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -303,7 +307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   astarData:
-    dataString: UEsDBBQAAAgIAABYIex3F78UJQIAAEcEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFdUstu2zAQ/JWCZzuQBadxfUvtxG2RJkbcoocihxW1sghTpMBH/Qj8711SsmQFAiRod/YxM/vOtl7kbP7O/oH0yOYszVK8y6DI79Lp7Sz/PJ7iLM1uZ0UC00maJRk7jxjYGrl7BSc0m09GTFhdoTOC36utpC7JiHklCm2qh3yLC22dZfMCpMURM9qFOhWGHiL0GN8nelNrjsqhGSTHyc2ky3vFJVQ15htxwhY2SRogfQmhdI5Nkqq4llLYdpw71oHiAmrrac0RywXQ3mEcQUsU29KxeXpV9VIUFl1cxMBxKQzRjs3YV+1K6lCB3V3JF+Y3fX4OE+MJZQqjq2/tlLizKwXfvcKRg3WdQNfB5fWCXu1B7iCT+KdE9axXRntF5jnjqcxbTJddk47BokS+u2Ca1QYhXw+0vgh9DtQOCymqjH5vpv3v/UHYiKPARuqg6BeqRUOyf6dVo7k29qNYWOG3xV+w7S+gDT8KYx0lYjPwTj8JtVsZkffIS3QprHsSlYi6kcOBRqa9ISR7iHoSY+8W2igMwYZajQqkO65pmht6+SHTzfsQfwTudKN9m2nvewiPwQ6bJMPEWu8v/ln84at6rYVyGwTDy95zPDhvcAkOgh1UTi7nXdoSV05zlZeSziiOIpp/kxE9b8S9BKVQhhB71iqc9vXnjdwUiiiBXDebRRXIu566okMjNYP+n1YG6nDcuYH9Spwq3TsiVKE33CCql776/B9QSwMEFAAACAAAAFgh7B5/XXYyAAAAMgAAABIAJABncmFwaDBfZWRpdG9yLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF7ImxvY2tlZCI6dHJ1ZSwic2hvd0V4dHJhIjpmYWxzZSwicGl2b3QiOiJDZW50ZXIifVBLAwQUAAAICAAAWCHsX1/ZsXUAAACDAAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAR2MsQ6DIBQA/+XNliBiIa4d3Ez3xgHyHsrQh0Fs0jT990q3G+7uAy/Ke0wMA3TCiA4aWLLb1h2G9sQj4kkPUF6R8S6gUbq3eL1ossr3NkinW+Wlh7mB8t5ock/6F3dX1hAZIy9izBHHeq0WJ6RbOrhUTc7fH1BLAQItABQAAAgIAABYIex3F78UJQIAAEcEAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgAAABYIewef112MgAAADIAAAASACQAAAAAAAAAAAAAAHICAABncmFwaDBfZWRpdG9yLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAWCHsX1/ZsXUAAACDAAAACQAkAAAAAAAAAAAAAAD4AgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAADAAMAHAEAALgDAAAAAA==
+    dataString: UEsDBBQAAAgIAABYIezr5d9ktwEAAAwDAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlUstu2zAQ/BeeVUNvxT7WCdJDHRdSDkGDHtbSWiJCke6Sih+B/70ryZYT9CTMcDirneGHqDtZicWHeAfVoViIeZxgFMabLLuL0jjMvgXJPM38DGE+D9K7IBNnT5QNEJQOKYdKdlYsQuaMdqajFRweiAyNHCpVyBP7+rNkhD9Q1o3rCT/wxB7UG2wUXtnwRi2VbDeXiy0cCmV27BP5A3qoavyJunbNhZI6x1oaPU6LPIGVdIaepcILxSp3QS9f4e8RagRC6wr+lM1aq+MLH2xBWfREZ7G34k0ddYwJFb6Ddo8Eu6boaAslrkzVB3hvnozL8W8nCQUrwXJOPGVplJIVkp1Mp6MV2uaT95V+RiKQ+n+e8KYuL7b59fQeHUglFgGvtDVUYvXddLqyS9Qs6Ks+cKqeOPLWs5TDPTE8f9WOkQ3KwB+12SyL/SSKBz2T574H+/bp6YRJyqSDejXwr6Km3kz88YRtzL5fct05JTVe/72nnzi1pdEaS8f13cJx4/IFtLupQk9ILZ0E9Qs1KHcc9uBnMUWkoe0ryLHkNIZuuIGKYP8oT62ZMpN6a4qSU9Tr4fIw8vwPUEsDBBQAAAgIAABYIex0s87GeAAAAIUAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BHYyxDoIwFAD/5c3YUFr6KKuDmzGuhqHaJ3TgldBiYoz/LnW74e4+8KI1hcjQgxIoFFQwrm6ZEvRyxy34nW5gdUuq0XfEThnd4EG21mCN5KyVppMIQwX5vdDZzfQvLi5Pz8A+8Ciu9HApn8q3eBw9HePGuYj18P0BUEsBAi0AFAAACAgAAFgh7Ovl32S3AQAADAMAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAFgh7HSzzsZ4AAAAhQAAAAkAJAAAAAAAAAAAAAAABAIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAADHAgAAAAA=
     upgradeData: 
     data_backup: 
     file_cachedStartup: {fileID: 0}
@@ -378,7 +382,7 @@ MonoBehaviour:
     pivotPointRoot: {fileID: 0}
     spreadOutCount: 1
   showGraphs: 1
-  lastUniqueAreaIndex: 5
+  lastUniqueAreaIndex: 9
 --- !u!4 &479164497
 Transform:
   m_ObjectHideFlags: 0
@@ -411,7 +415,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextWaypointDistance: .5
-  CurrentWaypoint: 0
 --- !u!1 &702378666
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +568,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
+  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -750,6 +754,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -932,6 +942,7 @@ GameObject:
   - 4: {fileID: 1806744949}
   - 114: {fileID: 1806744950}
   - 114: {fileID: 1806744951}
+  - 114: {fileID: 1806744952}
   m_Layer: 0
   m_Name: Robot
   m_TagString: Untagged
@@ -985,7 +996,7 @@ MonoBehaviour:
   drawGizmos: 1
   detailedGizmos: 1
   startEndModifier:
-    priority: 1
+    priority: 2
     addPoints: 0
     exactStartPoint: 3
     exactEndPoint: 3
@@ -999,6 +1010,18 @@ MonoBehaviour:
     tagsChange: -1
     tagsSet: -1
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--- !u!114 &1806744952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1806744948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f586f285b3847808d79083bd19ef1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priority: 1
 --- !u!1 &1869757964
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,7 +1276,7 @@ MonoBehaviour:
   m_Script: {fileID: 1997211142, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AllowActivationOnStandalone: 0
+  m_ForceModuleActive: 0
 --- !u!114 &2066843951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1271,7 +1294,7 @@ MonoBehaviour:
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
   m_RepeatDelay: .5
-  m_AllowActivationOnMobileDevice: 0
+  m_ForceModuleActive: 0
 --- !u!114 &2066843952
 MonoBehaviour:
   m_ObjectHideFlags: 0

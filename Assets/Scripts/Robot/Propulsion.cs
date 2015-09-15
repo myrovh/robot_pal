@@ -8,8 +8,8 @@ public class Propulsion : Module
 
     private Path _waypoints;
     private int _currentWaypoint;
-    private int tempSpeed = 6; //TODO speed is calculated from attached servos
-    private float tempTurnRate = 3.0f; //TODO speed is calculated from attached servos
+    private float tempSpeed = 3.0f; //TODO speed is calculated from attached servos
+    private float tempTurnRate = 1.0f; //TODO speed is calculated from attached servos
     /// <summary>
     /// When the angle between the Robot's forward direction and the current waypoint is greater than this value then the Robot will only turn towards the current waypoint.
     /// </summary>

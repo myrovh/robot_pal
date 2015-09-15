@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 492750}
   - 33: {fileID: 3381064}
   - 23: {fileID: 2349010}
+  - 114: {fileID: 11477914}
   m_Layer: 0
   m_Name: TestTreads
   m_TagString: Untagged
@@ -60,6 +61,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 169364}
   m_Mesh: {fileID: 4300006, guid: 9e357458e1f00e842a6dba94d3d94215, type: 3}
+--- !u!114 &11477914
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a98e98e4d747234090f62cb6eeba5aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextWaypointDistance: .5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
